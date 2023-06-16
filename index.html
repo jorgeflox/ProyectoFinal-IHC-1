@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos/cabecera.css">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/nosotros.css">
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header class="container" id="cont-cabecera">
+        <div class="row mt-4">
+            <div class="logoprincipal col-md-3 p-3 p-md-0">
+                <img class="logotipo" src="imagenes/logo.png" alt="">
+            </div>
+            <div
+                class="col-md-9 d-flex flex-md-row flex-column justify-content-around align-items-center text-center text-md-start">
+                <div>
+                    <h5>Dirección</h5>
+                    <h6>Av. Próceres 1060 - SMP</h6>
+                </div>
+                <div>
+                    <h5>Horario de Atención</h5>
+                    <h6>Lun a Dom: 8:30am - 7:00pm</h6>
+                </div>
+                <div>
+                    <h5>Llámanos</h5>
+                    <h6>999-888-777</h6>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Barra de navegacion -->
+    <div class="barra" id="cont-barra">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand vinculos" href="#">Bienvenidos</a>
+                <button class="navbar-toggler vinculos" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                        <li class="nav-item">
+                            <a class="nav-link vinculos" aria-current="page" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link vinculos" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle vinculos" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="#">Medicamentos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link vinculos" href="#">Comentarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link vinculos" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex col-md-2 justify-content-around justify-content-md-between" role="search">
+                       <a class="iconos-redes" href="https://www.whatsapp.com/?lang=es"><i class="bi bi-whatsapp"></i></a>
+                       <a class="iconos-redes" href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
+                       <a class="iconos-redes" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                       <a class="iconos-redes" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                       <a class="iconos-redes" href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Cuerpo -->
+    <main>
+        <!-- Home -->
+        <section class="home" id="cont-home">
+            <div class="eslogan">
+                <p class="text-center p-2">Bienvenidos a nuestra clinica veterinaria, donde el bienestar y la salud de tus mascotas son nuestra prioridad absoluta</p>
+            </div>
+            <div class="container">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="imagenes/carr1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada paciente"</span>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/carr2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada paciente"</span>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/carr3.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada paciente"</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-md-none text-center" >
+                        <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada paciente"</span>
+                    </div>
+                  </div>
+            </div>
+            
+        </section>
+        <!-- Nosotros -->
+        <section class="nosotros" id="nosotros">
+
+        </section>
+        <!-- Servicios -->
+        <section class="servicios">
+
+        </section>
+        <!-- Productos -->
+        <section class="productos">
+
+        </section>
+        <!-- comentarios -->
+        <section class="comentarios">
+
+        </section>
+    </main>
+    <!-- Contactanos -->
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="scripts/cabecera.js"></script>
+</body>
+
+</html>
