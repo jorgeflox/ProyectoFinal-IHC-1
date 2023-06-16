@@ -38,4 +38,8 @@
         font-weight: normal;
         -webkit-text-stroke: 0px;
     }
+
+    .carousel-item{
+        height: 50vh;
+    }
 }
