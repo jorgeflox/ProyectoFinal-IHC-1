@@ -7,10 +7,12 @@
     <title>Proyecto Final</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="estilos/cabecera.css">
     <link rel="stylesheet" href="estilos/home.css">
     <link rel="stylesheet" href="estilos/nosotros.css">
+    <link rel="stylesheet" href="estilos/productos.css">
+    <link rel="stylesheet" href="estilos/comentarios.css">
     <link rel="stylesheet" href="estilos/footer.css">
 </head>
 
@@ -42,43 +44,46 @@
     <div class="barra" id="cont-barra">
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand vinculos" href="#">Bienvenidos</a>
-                <button class="navbar-toggler vinculos" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand vinculos" href="#" onclick="minimiza()">Bienvenidos</a>
+                <button class="navbar-toggler vinculos" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
                         <li class="nav-item">
-                            <a class="nav-link vinculos" aria-current="page" href="#nosotros">Nosotros</a>
+                            <a class="nav-link vinculos" aria-current="page" href="#nosotros" onclick="minimiza()">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link vinculos" href="#">Servicios</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle vinculos" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle vinculos" href="#productos" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" >
                                 Productos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                <li><a class="dropdown-item" href="#">Medicamentos</a></li>
+                                <li><a class="dropdown-item" href="#productos" onclick="minimiza()">Productos</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="minimiza()">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="minimiza()">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="minimiza()">Medicamentos</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link vinculos" href="#">Comentarios</a>
+                            <a class="nav-link vinculos" href="#comentarios" onclick="minimiza()">Comentarios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link vinculos" href="#footer">Contacto</a>
+                            <a class="nav-link vinculos" href="#footer" onclick="minimiza()">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex col-md-2 justify-content-around justify-content-md-between" >
-                       <a class="iconos-redes" href="https://www.whatsapp.com/?lang=es"><i class="bi bi-whatsapp"></i></a>
-                       <a class="iconos-redes" href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
-                       <a class="iconos-redes" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-                       <a class="iconos-redes" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                       <a class="iconos-redes" href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                    <form class="d-flex col-md-2 justify-content-around justify-content-md-between">
+                        <a class="iconos-redes" href="https://www.whatsapp.com/?lang=es"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a class="iconos-redes" href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
+                        <a class="iconos-redes" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a class="iconos-redes" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a class="iconos-redes" href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
                     </form>
                 </div>
             </div>
@@ -89,40 +94,45 @@
         <!-- Home -->
         <section class="home" id="cont-home">
             <div class="eslogan">
-                <p class="text-center p-2">Bienvenidos a nuestra clinica veterinaria, donde el bienestar y la salud de tus mascotas son nuestra prioridad absoluta</p>
+                <p class="text-center p-2">Bienvenidos a nuestra clinica veterinaria, donde el bienestar y la salud de
+                    tus mascotas son nuestra prioridad absoluta</p>
             </div>
             <div class="container-fluid">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="imagenes/carr1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada paciente"</span>
+                        <div class="carousel-item active">
+                            <img src="imagenes/carr1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en
+                                    cada paciente"</span>
+                            </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagenes/carr2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada paciente"</span>
+                        <div class="carousel-item">
+                            <img src="imagenes/carr2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en
+                                    cada paciente"</span>
+                            </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="imagenes/carr3.jpeg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada paciente"</span>
+                        <div class="carousel-item">
+                            <img src="imagenes/carr3.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en
+                                    cada paciente"</span>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="d-md-none text-center" >
-                        <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada paciente"</span>
+                    <div class="d-md-none text-center">
+                        <span class="lema-compromiso">"Cuidado experto y amor incodicional: Nuestra pasión en cada
+                            paciente"</span>
                     </div>
-                  </div>
+                </div>
             </div>
-            
+
         </section>
         <!-- Nosotros -->
         <section class="nosotros" id="nosotros">
-            
+
         </section>
         <!-- Servicios -->
         <section class="servicios" id="servicios">
@@ -130,11 +140,103 @@
         </section>
         <!-- Productos -->
         <section class="productos" id="productos">
-
+            <div class="container cont-productos">
+                <h1 class="titulo-contactanos">Nuestros Productos</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4 pb-4 text-center">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="imagenes/alimentos.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Alimentos</h5>
+                                <p class="card-text">Contamos con una amplia variedad de alimentos: enlatados, snacks,
+                                    orgánicos, complementos y suplementos, entre otros. Todo lo que tu engreído necesita
+                                    para estar fuerte y sano </p>
+                                <a href="#" class="btn btn-success">Ver Catalogo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card h-100">
+                            <img src="imagenes/accesorios.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">accesorios</h5>
+                                <p class="card-text">Porque sabemos que te preocupa el desarrollo emocional y físico de
+                                    tu mascota, contamos con una gran variedad de juguetes y accesorios que promueven el
+                                    ejercicio, la diversión y el bienestar de tu fiel compañero</p>
+                                <a href="#" class="btn btn-success">Ver Catalogo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="imagenes/medicinas.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Medicamentos</h5>
+                                <p class="card-text">Los medicamentos son herramientas esenciales en el cuidado de la
+                                    salud, para prevenir, aliviar o tratar enfermedades, mejorando así la calidad de
+                                    vida de tus mascotas.</p>
+                                <a href="#" class="btn btn-success">Ver Catalogo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- comentarios -->
         <section class="comentarios" id="comentarios">
+            <div class="container">
+                <h1 class="titulo-comentarios">Lo que dicen nuestros clientes</h1>
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-end " >
+                            <div class="card-body">
+                                <p class="card-text autor-comentarios">"Muy amables, asistieron en todo momento a mi perrita"
+                                </p>
+                                <h5 class="card-title autores">Norma M. Laferte</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-end " >
+                            <div class="card-body">
+                                <p class="card-text autor-comentarios">"Excelente servicio, médicos de primer nivel, recomendado 100%"
+                                </p>
+                                <h5 class="card-title autores">Jonathan davis</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-end " >
+                            <div class="card-body">
+                                <p class="card-text autor-comentarios">"Gran variedad de productos, sobretodo de buena calidad"
+                                </p>
+                                <h5 class="card-title autores">Chris martin</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-end " >
+                            <div class="card-body">
+                                <p class="card-text autor-comentarios">"Atención de calidad, mucha paciencia, me sentí como en casa"
+                                </p>
+                                <h5 class="card-title autores">Bad Bunny</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-end " >
+                            <div class="card-body">
+                                <p class="card-text autor-comentarios">"Sin duda, aman lo que hacen, se nota en esos pequeños detalles"
+                                </p>
+                                <h5 class="card-title autores">Dwayne D. Johnson</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
 
+            </div>
         </section>
     </main>
     <!-- Contactanos -->
@@ -146,10 +248,12 @@
                         <img class="logotipo-pie" src="imagenes/logo.png" alt="">
                     </div>
                     <p class="p-logo">
-                        Servicios médicos de veterinarios especialistas con trayectoria y amplia experiencia, trato personalizado y seguimiento de las necesidades de tu mascota.
+                        Servicios médicos de veterinarios especialistas con trayectoria y amplia experiencia, trato
+                        personalizado y seguimiento de las necesidades de tu mascota.
                     </p>
                     <div class="container d-flex justify-content-around justify-content-md-between">
-                        <a class="iconos-redes" href="https://www.whatsapp.com/?lang=es"><i class="bi bi-whatsapp"></i></a>
+                        <a class="iconos-redes" href="https://www.whatsapp.com/?lang=es"><i
+                                class="bi bi-whatsapp"></i></a>
                         <a class="iconos-redes" href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
                         <a class="iconos-redes" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                         <a class="iconos-redes" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
@@ -170,18 +274,21 @@
                 <div class="col-md-4 text-center">
                     <h5 class="titulo-contactanos">Visítanos</h5>
                     <div class="container-fluid">
-                        <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d689.8405678343182!2d-77.08575586667239!3d-12.020956497026532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce961920a055%3A0x3436429a21923f93!2sVeterinaria%20Ariel!5e0!3m2!1ses-419!2spe!4v1686973035113!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe width="100%"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d689.8405678343182!2d-77.08575586667239!3d-12.020956497026532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce961920a055%3A0x3436429a21923f93!2sVeterinaria%20Ariel!5e0!3m2!1ses-419!2spe!4v1686973035113!5m2!1ses-419!2spe"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-        <script src="scripts/cabecera.js"></script>
+    <script src="scripts/cabecera.js"></script>
 </body>
 
 </html>

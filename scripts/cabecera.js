@@ -13,3 +13,10 @@ window.onscroll = function() {
     }
   };
   
+  function minimiza() {
+    var navbarCollapse = document.getElementById("navbarScroll");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    }
+  }
+  
