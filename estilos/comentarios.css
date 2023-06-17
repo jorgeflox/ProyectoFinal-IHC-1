@@ -1,0 +1,13 @@
+.titulo-comentarios{
+    color: rgb(242,147,1);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.autor-comentarios{
+font-style: italic;
+}
+
+.autores{
+text-transform: capitalize;
+}
