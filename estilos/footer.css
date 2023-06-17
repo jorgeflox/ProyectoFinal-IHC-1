@@ -1,0 +1,27 @@
+footer{
+    background-color: rgb(253,199,149);
+    padding-bottom: 50px;
+}
+
+.logotipo-pie{
+    width: 192px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.p-logo{
+    font-size: 14px;
+    padding: 0px 15px;
+    text-align: justify;
+}
+
+.titulo-contactanos{
+    padding-top: 50px;
+    color: brown;
+}
+
+@media screen and (max-width:768px) {
+    .logotipo-pie{
+        padding-top: 20px;
+    }
+}
