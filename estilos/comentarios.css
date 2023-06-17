@@ -11,3 +11,26 @@ font-style: italic;
 .autores{
 text-transform: capitalize;
 }
+
+.comentarios .card{
+    overflow: hidden;
+}
+.cb1 {
+    background-color: rgb(228, 179, 179);
+}
+
+.cb2 {
+    background-color: rgb(225, 228, 179);
+}
+
+.cb3 {
+    background-color: rgb(179, 228, 193);
+}
+
+.cb4 {
+    background-color: rgb(227, 179, 228);
+}
+
+.cb5 {
+    background-color: rgb(179, 215, 228);
+}
