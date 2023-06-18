@@ -1,4 +1,13 @@
+
+.img-nosotros{
+    width: 100%;
+}
+
 .nosotros{
-    background-color: rgb(149, 253, 225);
-    height: 500px;
+    background-color: rgb(253,199,149);
+    padding-top: 50px;
+}
+
+.nos-title{
+    color: brown;
 }
