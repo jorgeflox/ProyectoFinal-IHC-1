@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accesorios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos/cabecera.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header class="container" id="cont-cabecera">
+        <div class="row mt-4">
+            <div class="logoprincipal col-md-3 p-3 p-md-0">
+                <img class="logotipo" src="imagenes/logo.png" alt="">
+            </div>
+            <div
+                class="col-md-9 d-flex flex-md-row flex-column justify-content-around align-items-center text-center text-md-start">
+                <div>
+                    <h5>Dirección</h5>
+                    <h6>Av. Próceres 1060 - SMP</h6>
+                </div>
+                <div>
+                    <h5>Horario de Atención</h5>
+                    <h6>Lun a Dom: 8:30am - 7:00pm</h6>
+                </div>
+                <div>
+                    <h5>Llámanos</h5>
+                    <h6>999-888-777</h6>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Barra de navegacion -->
+    <div class="barra" id="cont-barra">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand vinculos" href="index.html" onclick="minimiza()">Bienvenidos</a>
+                <button class="navbar-toggler vinculos" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                        <li class="nav-item">
+                            <a class="nav-link vinculos" aria-current="page" href="index.html#nosotros"
+                                onclick="minimiza()">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link vinculos" href="index.html#servicios" onclick="minimiza()">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle vinculos" href="#productos" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#productos" onclick="minimiza()">Productos</a></li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li><a class="dropdown-item" href="alimentos.html" onclick="minimiza()">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="accesorios.html" onclick="minimiza()">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="medicamentos.html" onclick="minimiza()">Medicamentos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link vinculos" href="index.html#comentarios" onclick="minimiza()">Comentarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link vinculos" href="#footer" onclick="minimiza()">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex col-md-2 justify-content-around justify-content-md-between">
+                        <a class="iconos-redes" href="https://www.whatsapp.com/?lang=es"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a class="iconos-redes" href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
+                        <a class="iconos-redes" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a class="iconos-redes" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a class="iconos-redes" href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Catalogo de Alimentos -->
+    <div class="catalogo-alimentos">
+        AQUI VA EL CODIGO DE CATALOGO DE ACCESORIOS
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid" id="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 text-center">
+                    <div class="container contenedor-img-pie">
+                        <img class="logotipo-pie" src="imagenes/logo.png" alt="">
+                    </div>
+                    <p class="p-logo">
+                        Servicios médicos de veterinarios especialistas con trayectoria y amplia experiencia, trato
+                        personalizado y seguimiento de las necesidades de tu mascota.
+                    </p>
+                    <div class="container d-flex justify-content-around justify-content-md-between">
+                        <a class="iconos-redes" href="https://www.whatsapp.com/?lang=es"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a class="iconos-redes" href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
+                        <a class="iconos-redes" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a class="iconos-redes" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a class="iconos-redes" href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="titulo-contactanos">Contáctanos</h5>
+                    <h5>Escribenos</h5>
+                    <h6>ariels.veterinaria@gmail.com</h6>
+                    <h5>horario de atención</h5>
+                    <h6>Lun a Dom: 8:30am - 7:00pm</h6>
+                    <h5>Llámanos</h5>
+                    <h6>938-813-733</h6>
+                    <h5>Dirección</h5>
+                    <h6>Av. Próceres 1060 - SMP</h6>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="titulo-contactanos">Visítanos</h5>
+                    <div class="container-fluid">
+                        <iframe width="100%"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d689.8405678343182!2d-77.08575586667239!3d-12.020956497026532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce961920a055%3A0x3436429a21923f93!2sVeterinaria%20Ariel!5e0!3m2!1ses-419!2spe!4v1686973035113!5m2!1ses-419!2spe"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
